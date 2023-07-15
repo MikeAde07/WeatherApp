@@ -46,6 +46,8 @@ var cityWeather = function(address) {
     humidityEl.textContent = "Humidity: " + humidity;
     tempContainerEl.appendChild(cityNameEl);
     tempContainerEl.appendChild(tempEl);
+    tempContainerEl.appendChild(windEl);
+    tempContainerEl.appendChild(humidityEl);
 }
 
 cityFormEl.addEventListener("submit", cityPrint);
